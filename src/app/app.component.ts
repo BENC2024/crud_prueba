@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { EGRESO } from './listaEgresos';
+import { EGRESOS } from './Egresos';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'crud_prueba';
+  title = 'ejercicio';
+
+
 }

@@ -1,0 +1,20 @@
+<p>listar works!</p>
+
+<div class="container text-center">
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Descripcion</th>
+        <th>Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let misegresos of misEgresos, let i = index" (click)="mostrarEgreso(i+1,misegresos.descripcion,misegresos.valor)">
+        <th id="idt">{{i+1}}</th>
+        <td id="descripcion">{{misegresos.descripcion}}</td>
+        <td id="valor">{{misegresos.valor}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

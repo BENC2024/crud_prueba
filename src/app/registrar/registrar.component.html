@@ -1,0 +1,11 @@
+<p>registrar works!</p>
+
+<form action="form">
+  <label for="descripcion">Descripcion: </label>
+  <input type="text" name="descripcion" placeholder="Descripcion" [(ngModel)] = "descripcion">
+  <label>{{descripcion}}</label> <br>
+  <label for="valor">Valor: </label>
+  <input type="number" name="valor" placeholder="Valor"  [(ngModel)] = "valor">
+  <label>{{valor}}</label> <br>
+  <button (click)="registrarProducto()">Registrar</button>
+</form>
